@@ -3,11 +3,11 @@
  */
 package io.github.kubesys.devfrk.services;
 
-import javax.devfrk.http.annotation.ExceptionHandler;
-import javax.devfrk.http.annotation.RequestMapping;
-import javax.devfrk.http.annotation.ResponseBody;
-import javax.devfrk.http.annotation.RestController;
-import javax.devfrk.http.httpserver.HttpContext;
+import io.github.kubesys.devfrk.HttpContext;
+import io.github.kubesys.devfrk.annotation.ExceptionHandler;
+import io.github.kubesys.devfrk.annotation.RequestMapping;
+import io.github.kubesys.devfrk.annotation.ResponseBody;
+import io.github.kubesys.devfrk.annotation.RestController;
 
 
 @RequestMapping(value= "/test")

@@ -3,11 +3,10 @@
  */
 package io.github.kubesys.devfrk.services;
 
-import javax.devfrk.http.annotation.Autowired;
-import javax.devfrk.http.annotation.RequestMapping;
-import javax.devfrk.http.annotation.RestController;
-
 import io.github.kubesys.devfrk.Counter;
+import io.github.kubesys.devfrk.annotation.Autowired;
+import io.github.kubesys.devfrk.annotation.RequestMapping;
+import io.github.kubesys.devfrk.annotation.RestController;
 
 
 @RequestMapping(value= "/cnt2")

@@ -3,9 +3,7 @@
  */
 package io.github.kubesys.devfrk;
 
-import javax.devfrk.http.HttpServerApplication;
-import javax.devfrk.http.annotation.ComponentScan;
-import javax.devfrk.http.annotation.HttpBootApplication;
+import io.github.kubesys.devfrk.annotation.ComponentScan;
 
 /**
  * @author wuheng@otcaix.iscas.ac.cn
@@ -13,11 +11,10 @@ import javax.devfrk.http.annotation.HttpBootApplication;
  */
 @ComponentScan(basePackages = {
 		"io.github.kubesys.devfrk" })
-@HttpBootApplication
 public class HttpServerImpl  {
 
-	public static void main(String[] args) {
-		HttpServerApplication.run(HttpServerImpl.class, args);
+	public static void main(String[] args) throws Exception {
+		HttpServerRunner.run(HttpServerImpl.class, args);
 	}
 
 }
